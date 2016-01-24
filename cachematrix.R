@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## MakeCacheMatrix will return a list containing 4 methods
+## Arguments: 
+## + x : the squared matrix can be inversed
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -17,7 +19,14 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## CacheSovle will return the cached solved value of x if any
+## Arguments:
+## + x: the squared matrix can be inversed
+## E.g.
+## matrix <- makeCacheMatrix(rnorm(16),4,4)
+## cacheSolve(matrix)
+## cacheSolve(matrix) --> the messsage "getting cached data" should be presented
+
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
